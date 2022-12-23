@@ -35,7 +35,7 @@ Sample input file and the output of the lexical analyzer:
 
 Input:
 
-for (int i = 0; i < 10; i=i+1) 
+for (int i = 0; i < 10; i=i+1)
 {
 a = f;
 char ch1;
@@ -73,3 +73,28 @@ Next token is RCURLYB Next lexeme is }
 Next token is RETURN_STMT Next lexeme is return
 Next token is INT_LIT Next lexeme is 0
 Next token is SEMICOLON Next lexeme is ;
+
+If you want to know whether a particular source code can be given as an input to your
+program, please try it in a Java compiler. If it is accepted by Java then it can be given
+as an input. In any case, make sure you use only lexemes given in the table.
+
+Your program should also check for errors. However, your first goal is to make sure
+that if a valid source code is given to your program as an input then it is correctly
+analyzed by your program.
+
+Error types that could exist:
+
+● Unknown operator: This occurs when an operator other than the ones given in
+the table is scanned. For example, !, @, #, $, % are all unknown operators
+● Unknown identifier: This occurs when an identifier consisting of more than a
+single char exists in the input. For example, ab, ab1, xyz, while, do are
+unknown identifiers
+
+Sample Run:
+
+Your code will take input and output files from the console as given in the following
+example where the source code, input and output files are named
+hw1_firstname_lastname.java, input.txt, and output.txt,
+respectively:
+
+java hw1_firstname_lastname.java input.txt output1.txt
