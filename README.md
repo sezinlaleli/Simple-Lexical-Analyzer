@@ -10,6 +10,7 @@ Precisely, the first column of the following table shows the set of lexemes you 
 recognize while the right shows their tokens.
 
 Lexeme Token
+
 for FOR_STATEMENT
 ( LPARANT
 ) RPARANT
