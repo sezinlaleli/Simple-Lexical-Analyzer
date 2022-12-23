@@ -85,7 +85,7 @@ analyzed by your program.
 Error types that could exist:
 
 ● Unknown operator: This occurs when an operator other than the ones given in
-the table is scanned. For example, !, @, #, $, % are all unknown operators
+the table is scanned. For example, !, @, #, $, % are all unknown operators\n
 ● Unknown identifier: This occurs when an identifier consisting of more than a
 single char exists in the input. For example, ab, ab1, xyz, while, do are
 unknown identifiers
